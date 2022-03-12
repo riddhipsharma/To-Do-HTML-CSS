@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body{
+    background: linear-gradient(245.89deg, rgba(3, 168, 99, 0.66) 31.16%, #048BA9 77.36%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#addtodo{
+    background: rgba(255, 255, 255, 0.31);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+#enter-todo{
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    font-size: 24px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+}
+
+button{
+    color: #ffffff;
+    background-color: #00667C;
+    width: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+::placeholder { 
+    color: rgba(0, 0, 0, 0.26);
+    opacity: 1; 
+}
+
+#content{
+    background: rgba(255, 255, 255, 0.31);
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 24px;
+    width: 400px;
+}
+
+small{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 10px;
+    color: #404040;
+}
+
+h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 20px;
+    color: #343434;
+    font-family: 'Roboto';
+}
+
+#todo-table{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+table{
+    width: 100%;
+    border-spacing: 0px;
+    background: #ffffff;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 20px;
+}
+
+table thead tr{
+    background: #3D39AA;
+    color: #ffffff;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+table thead tr th:first-child{
+    border-radius: 10px 0px 0px 0px;
+    text-align: start;
+    padding-left: 10px;
+    width: 30px;
+}
+
+table thead tr th:last-child{
+    border-radius: 0px 10px 0px 0px;
+    width: 70px;
+    text-align: start;
+    letter-spacing: 1px;
+}
+
+table thead tr th:nth-child(2){
+    text-align: start;
+    letter-spacing: 1px;
+}
+
+table tbody tr {
+    font-family: Inter;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    height: 40px;
+}
+
+table tbody tr:nth-child(even){
+    background: #F0F0F0;
+}
+
+#checkbox{
+    margin: 10px;
+}
+
+table tbody tr td:last-child{
+    width: 70px;
+    text-align: start;
+}
+
+table tbody tr:last-child td:first-child{
+    border-radius: 0px 0px 0px 10px;
+}
+
+table tbody tr:last-child td:last-child{
+    border-radius: 0px 0px 10px 0px;
+}
+
+table tbody tr.complete{
+    background-color: rgb(188, 255, 182);
+    text-decoration: line-through;
+}

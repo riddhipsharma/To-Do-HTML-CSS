@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div id="todo">
+        <div id="addtodo">
+            <input type="text" placeholder="Add a new to-do..." id="enter-todo">
+            <button type="submit">+</button>
+        </div>
+        <div id="content">
+            <h3>
+                ToDo's
+            </h3>
+            <small>
+                5 Total, 3 Complete and 2 Pending
+            </small>
+            <div id="todo-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>To-Do Title</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="complete">
+                            <td><input type="checkbox" name="" id="checkbox"></td>
+                            <td>Milk</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id="checkbox"></td>
+                            <td>Tea</td>
+                            <td class="pending">Pending</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id="checkbox"></td>
+                            <td>Homework</td>
+                            <td class="pending">Pending</td>
+                        </tr>
+                        <tr class="complete">
+                            <td><input type="checkbox" name="" id="checkbox"></td>
+                            <td>Sleep</td>
+                            <td>Completed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
